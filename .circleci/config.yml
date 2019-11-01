@@ -11,7 +11,7 @@ jobs:
       - image: cimg/go:1.13
     steps:
       - checkout
-      - run: go test
+      - run: go test -v
 workflows:
   build_and_test:
     jobs:
