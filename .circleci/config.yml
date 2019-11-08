@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+    coralogix: coralogix/coralogix@dev:alpha
 jobs:
   build:
     docker:
@@ -17,3 +19,4 @@ workflows:
     jobs:
       - build
       - test
+      - coralogix/stats
