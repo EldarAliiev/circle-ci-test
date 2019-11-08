@@ -20,3 +20,4 @@ workflows:
       - build
       - test
       - coralogix/stats
+      - coralogix/logs
