@@ -29,6 +29,9 @@ workflows:
       - test:
           requires:
             - build
+      - deploy:
+          requires:
+            - test
       - coralogix/stats:
           keep_artifacts: true
       - coralogix/logs:
