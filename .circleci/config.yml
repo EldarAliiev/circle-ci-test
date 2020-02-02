@@ -21,7 +21,7 @@ jobs:
       - coralogix/tag:
           application: CircleCI
           subsystems: 'workflow-stats,workflow-logs'
-          tag: "${CIRCLE_TAG}"
+          tag: "${CIRCLE_BUILD_NUM}"
 workflows:
   build_and_test:
     jobs:
