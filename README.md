@@ -1,1 +1,1 @@
-# Test Golang with CircleCI - for the webinar
+# Test Golang with CircleCI
