@@ -14,6 +14,14 @@ jobs:
     steps:
       - checkout
       - run: go test -v
+  deploy:
+    docker:
+      - image: cimg/go:1.13
+    steps:
+      - coralogix/tag:
+          application: CircleCI
+          subsystems: 'workflow-stats,workflow-logs'
+          tag: v1.0.0
 workflows:
   build_and_test:
     jobs:
