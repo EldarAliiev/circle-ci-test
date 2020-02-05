@@ -1,1 +1,1 @@
-# Test Golang with CircleCI - demo
+# Test Golang with CircleCI
