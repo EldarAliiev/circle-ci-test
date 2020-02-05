@@ -1,1 +1,1 @@
-# Coralglix CircleCI plugin
+# Coralglix CircleCI plugin webinar
