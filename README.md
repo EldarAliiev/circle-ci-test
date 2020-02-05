@@ -1,1 +1,1 @@
-# Test Golang with CircleCI - ready
+# Coralglix CircleCI plugin
