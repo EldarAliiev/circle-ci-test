@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-    coralogix: coralogix/coralogix@0.5.0
+    coralogix: coralogix/coralogix@dev:alpha
 jobs:
   build:
     docker:
