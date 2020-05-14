@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestAdd1 (t *testing.T) {
-    if add(2, 2) != 4 {
+    if add(2, 2) != 5 {
         t.Error("2 + 2 != 4")
     }
 }
