@@ -29,10 +29,18 @@ workflows:
       - test:
           requires:
             - build
-      - deploy:
+      - approve:
+          type: approval
           requires:
             - test
+      - deploy:
+          requires:
+            - approve
       - coralogix/stats:
           keep_artifacts: true
+          require:
+            - deploy
       - coralogix/logs:
           keep_artifacts: true
+          require:
+            - deploy
