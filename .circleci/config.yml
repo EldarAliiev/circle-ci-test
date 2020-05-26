@@ -38,9 +38,9 @@ workflows:
             - approve
       - coralogix/stats:
           keep_artifacts: true
-          require:
+          requires:
             - deploy
       - coralogix/logs:
           keep_artifacts: true
-          require:
+          requires:
             - deploy
