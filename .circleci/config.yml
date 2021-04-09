@@ -19,7 +19,7 @@ jobs:
       - image: cimg/go:1.13
     steps:
       - coralogix/tag:
-          application: CircleCI
+          applications: CircleCI
           subsystems: 'workflow-stats,workflow-logs'
           tag: "${CIRCLE_BUILD_NUM}"
 workflows:
